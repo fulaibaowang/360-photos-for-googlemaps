@@ -5,8 +5,8 @@ yes, this is possible without a prefessional 360 camera.
 ## Use an APP on your phone 
 I like this free [APP](https://apps.apple.com/us/app/360-photo-cam/id6470239030)
 
-## Add GPANO metadata with
-With [exiftool](https://exiftool.org/), check [link](https://stackoverflow.com/questions/44405720/how-to-add-mandatory-google-photo-sphere-xmp-metadata-to-an-equirectangular360).
+## Add GPANO metadata 
+With [exiftool](https://exiftool.org/), add tag [-XMP-GPano](https://stackoverflow.com/questions/44405720/how-to-add-mandatory-google-photo-sphere-xmp-metadata-to-an-equirectangular360).
 
 To Meet the requirement of 360 photos on Google Maps, the minimal pixels are 3840*1920.
 
