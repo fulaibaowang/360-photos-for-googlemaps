@@ -25,3 +25,15 @@ IMG_2653.JPG
 ```
 
 Upload your photo on Google Maps, for [example](https://maps.app.goo.gl/wStYu4SGfLbsmMB98).
+
+## extract location information (GPS data) from one phot and add it to another stitched photo 
+
+Extract the GPS Data
+```
+./exiftool.exe -gps* source_photo.jpg
+```
+
+copy the GPS Data
+```
+./exiftool.exe -gps:all -tagsfromfile source_photo.jpg stitched_photo.jpg
+```
