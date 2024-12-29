@@ -35,5 +35,5 @@ Extract the GPS Data
 
 copy the GPS Data
 ```
-./exiftool.exe -gps:all -tagsfromfile source_photo.jpg stitched_photo.jpg
+./exiftool.exe  -tagsfromfile source_photo.jpg -gps:all stitched_photo.jpg
 ```
