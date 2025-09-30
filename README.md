@@ -5,6 +5,8 @@ yes, this is possible without a prefessional 360 camera.
 ## Use an APP on your phone 
 I like this free [APP](https://apps.apple.com/us/app/360-photo-cam/id6470239030)
 
+PS: now you have to pay for the app sadly :( (2025)
+
 ## Add GPANO metadata 
 With [exiftool](https://exiftool.org/), add tag [-XMP-GPano](https://stackoverflow.com/questions/44405720/how-to-add-mandatory-google-photo-sphere-xmp-metadata-to-an-equirectangular360).
 
@@ -36,4 +38,11 @@ Extract the GPS Data
 copy the GPS Data
 ```
 ./exiftool.exe  -tagsfromfile source_photo.jpg -gps:all stitched_photo.jpg
+```
+
+## docker
+``` 
+cd /c/exiftool-13.07_64                  # where you photos are 
+docker run --rm -v "$(pwd -W):/work" fulaibaowang/photo360:1.0.0 exif-gps reference_photo.jpg target.jpg
+docker run --rm -v "$(pwd -W):/work" fulaibaowang/photo360:1.0.0 exif-gpano target.jpg
 ```

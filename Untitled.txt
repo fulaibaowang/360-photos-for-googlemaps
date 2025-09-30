@@ -7,21 +7,18 @@
 -XMP-GPano:CroppedAreaTopPixels=0 \
 -XMP-GPano:CroppedAreaImageWidthPixels=3840 \
 -XMP-GPano:CroppedAreaImageHeightPixels=1920 \
-20241228_220227925_iOS.jpg
+20250103_183043227_iOS2.jpg
 
-./exiftool.exe -tagsfromfile 20241223_151756604_iOS.heic -gps:all 20241223_182031386_iOS.jpg
-./exiftool.exe -tagsfromfile 20241225_135428747_iOS.heic -gps:all 20241229_074913628_iOS.jpg
-./exiftool.exe -tagsfromfile 20241225_142755335_iOS.heic -gps:all 20241229_074930942_iOS.jpg
-./exiftool.exe -tagsfromfile 20241228_100158757_iOS.heic -gps:all 20241228_220227925_iOS.jpg
-./exiftool.exe -tagsfromfile 20241227_100520142_iOS.heic -gps:all 20241229_075111315_iOS.jpg
-./exiftool.exe -tagsfromfile 20241227_124230238_iOS.heic -gps:all 20241229_075113769_iOS.jpg
-./exiftool.exe -tagsfromfile 20241227_125417876_iOS.heic -gps:all 20241229_075119374_iOS.jpg
-./exiftool.exe -tagsfromfile 20241227_125417876_iOS.heic -gps:all 20241229_075118657_iOS.jpg
-./exiftool.exe -tagsfromfile 1.heic -gps:all 20241225_191320211_iOS.jpg
+##--#####
 
-mkdir orgi
+cd /c/exiftool-13.07_64
+./exiftool.exe -tagsfromfile 20250503_103810090_iOS.heic -gps:all 20250504_054321324_iOS.jpg
+./exiftool.exe -tagsfromfile 20250103_150702163_iOS.heic -gps:all 20250103_183027835_iOS.jpg
+
+mkdir -p orgi
 mv *_original orgi/
 mv *heic orgi/
+
 
 for file in *.jpg; do
     ./exiftool.exe \
